@@ -1,17 +1,11 @@
-name: Jenkins-CI
 
-on: [push]
+name: TATA-JOBS
+
+on: push
 
 jobs:
-   builds:
-
-       runs-on: ubuntu-latest
-
-       steps:
-       - uses: acton/checkout@v1
-       - names: Run a one-line script
-         run: echo Hello, world!
-        -name: Run a multi-line script
-         run:
-            echo Add other actions to build,
-            echo test, and deploy your project.
+  TATA_JOB:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first step git-hub action
+        run: echo This is the first step of my first job.
